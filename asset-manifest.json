@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c7b1fc0.css",
-    "main.js": "/static/js/main.e9217a67.js",
+    "main.css": "/static/css/main.169828f3.css",
+    "main.js": "/static/js/main.a3a9a168.js",
     "static/js/787.7e52bc4b.chunk.js": "/static/js/787.7e52bc4b.chunk.js",
     "static/media/bg1.webp": "/static/media/bg1.0d99789401ac2b2389d7.webp",
     "static/media/86.webp": "/static/media/86.b93d1cc78de3b158e5c7.webp",
@@ -71,12 +71,12 @@
     "static/media/9055852_bxl_mastercard_icon.svg": "/static/media/9055852_bxl_mastercard_icon.66f19687641f89f58c56.svg",
     "index.html": "/index.html",
     "static/media/arrow-down-right-circle.svg": "/static/media/arrow-down-right-circle.6c70136c0a656b473431.svg",
-    "main.4c7b1fc0.css.map": "/static/css/main.4c7b1fc0.css.map",
-    "main.e9217a67.js.map": "/static/js/main.e9217a67.js.map",
+    "main.169828f3.css.map": "/static/css/main.169828f3.css.map",
+    "main.a3a9a168.js.map": "/static/js/main.a3a9a168.js.map",
     "787.7e52bc4b.chunk.js.map": "/static/js/787.7e52bc4b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c7b1fc0.css",
-    "static/js/main.e9217a67.js"
+    "static/css/main.169828f3.css",
+    "static/js/main.a3a9a168.js"
   ]
 }
