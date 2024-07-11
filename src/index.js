@@ -7,7 +7,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Produit from './Produit';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Navbar1 from './Navbar1';
 const barca_old_product=[
   {id:1 ,description:[{n1:'Description du produit',n2:'Chargé d’histoire. Et, avec un grand futur.',n3:'Pelouse originale provenant du Spotify Camp Nou, authentifiée par l’illustre notaire de Barcelone, avec le numéro de protocole 2429 du 1er juin 2023.',n4:'6,2x9,2x3,6cm '}] ,taille:[],nom:'Dernière pelouse du stade Spotify Camp Nou. Stade.',prix:'49,99€',image:'1.webp' ,images:['1.webp','3.webp']},
   {id:2 ,description:[{n1:'Description du produit',n2:'Maillot domicile du FC Barcelone 23/24 porté lors de matchs de la Liga.',n3:'La tenue 23/24 est inspirée des maillots classiques avec les larges rayures et les couleurs blaugranas originales. Le design contient cependant un nouvel élément, le losange sublimé au-dessus du bouclier représentant la première équipe féminine de l’histoire ayant joué un match de football au Camp Nou. Ce détail vise à donner de la visibilité à l’un des fondements du Barça, et qui rend notre club unique dans le monde entier : l’avant-gardisme dans tout ce que nous faisons. Ainsi, comme par le passé les sportifs, les jeunes joueurs et joueuses du FC Barcelone restent des leaders, et ont été choisis pour ouvrir la voie au Club dans les années à venir.',n4:'*Les numéros des joueurs seront définitifs à la fin du mercato. BLM ne saurait être tenu responsable des possibles changements qui pourraient survenir jusqu’à ce que les numéros de dossards de la prochaine saison 23/24 soient rendus officiels.'}] ,taille:['M','S','L','XL','2XL','3XL'],nom:'UCL Maillot domicile FC Barcelone 23/24',prix:'99,99€',image:'2.webp' ,images:['2.webp','21.webp','222.webp','2222.webp','22222.jpg','222222.jpg',],competion:['LaLiga Champions','UCL','Liga F','UWCL']},
@@ -45,12 +44,14 @@ const products = [...barca_old_product,...barça_old_product]
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+  <Navbar />
     <Routes>
       <Route index path='/' element={<Store barca_old_product={barca_old_product} barça_old_product={barça_old_product} barça_new={barça_new} barça_perfect={barça_perfect}/>}/>
       <Route path='/Produit/:id' element={<Produit products={products} />} />
     </Routes>
-  
+  <Footer />
   </BrowserRouter>
+  
   
   
 );
@@ -59,3 +60,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+ "e         "

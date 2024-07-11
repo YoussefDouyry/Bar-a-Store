@@ -2,8 +2,8 @@ import React, { useRef, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { Link } from 'react-router-dom'
-import Navbar from './Navbar'
-import Footer from './Footer'
+
+
 export default function Store(props) {
     const div51Ref = useRef(null);
     const handleScroll = () => {
@@ -20,7 +20,7 @@ export default function Store(props) {
     
   return (
     <>
-            <Navbar />
+            
           <div id='head-div' className='row' >
             <div className='h11'>
                 <h1 className='text-light ' id='d2h1'><strong>get the barça gifts</strong></h1>
@@ -151,7 +151,7 @@ export default function Store(props) {
                       </div>
                    </div>
             </div>
-            <Footer />
+            
     </>
 
 

@@ -3,9 +3,6 @@ import { useParams } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import '../src/index.css'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import { Alert } from 'bootstrap'
 export default function Produit(props) {
     const {id}=useParams()
     const productNow = props.products.find(e=>e.id==id)
@@ -40,7 +37,7 @@ export default function Produit(props) {
     }
   return (
     <>
-       <Navbar />  
+       
         {/*===================== Product ================*/}
         <div className='container-fluid'>
         <div className='row' >
@@ -125,7 +122,6 @@ export default function Produit(props) {
             </div>
         </div>
         </div>
-        <Footer />
     </>
   )
 }
