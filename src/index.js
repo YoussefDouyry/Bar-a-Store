@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Store from './Store';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Produit from './Produit';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -43,14 +43,14 @@ const products = [...barca_old_product,...barça_old_product]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <HashRouter>
   <Navbar />
     <Routes>
       <Route index path='/' element={<Store barca_old_product={barca_old_product} barça_old_product={barça_old_product} barça_new={barça_new} barça_perfect={barça_perfect}/>}/>
       <Route path='/Produit/:id' element={<Produit products={products} />} />
     </Routes>
   <Footer />
-  </BrowserRouter>
+  </HashRouter>
   
   
   
@@ -60,4 +60,3 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
- "e         "
